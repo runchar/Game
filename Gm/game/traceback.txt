@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+Before loading the script.
+NotADirectoryError: [WinError 267] 目录名称无效。: 'C:\\Users\\Goat\\Documents\\GitHub\\Game\\Gm\\game\\script.rpy'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\main.py", line 388, in main
+    renpy.loader.index_archives()
+  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\loader.py", line 257, in index_archives
+    for _dir, fn in listdirfiles():
+  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\loader.py", line 443, in listdirfiles
+    scandirfiles()
+  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\loader.py", line 343, in scandirfiles
+    i(add, seen)
+  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\loader.py", line 414, in scandirfiles_from_filesystem
+    for j in walkdir(i):
+  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\loader.py", line 270, in walkdir
+    for i in os.listdir(dir):
+NotADirectoryError: [WinError 267] 目录名称无效。: 'C:\\Users\\Goat\\Documents\\GitHub\\Game\\Gm\\game\\script.rpy'
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.2.2.24041101+nightly
+ 
+Mon Aug  5 16:28:16 2024
