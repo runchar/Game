@@ -1,24 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 103, in script
-    k "或许是因为这艘船上有一些罪犯，魔鬼和骗子都想得到的东西。"
-Exception: Sayer 'k' is not defined.
+  File "game/script.rpy", line 869, in script
+    邻居 "早啊，听说你媳妇生了？怎么样？男孩女孩？"
+Exception: Sayer '邻居' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 103, in script
-    k "或许是因为这艘船上有一些罪犯，魔鬼和骗子都想得到的东西。"
-  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+  File "game/script.rpy", line 869, in script
+    邻居 "早啊，听说你媳妇生了？怎么样？男孩女孩？"
+  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
     Say.execute(self)
-  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 575, in execute
+  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 575, in execute
     who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Goat\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 464, in eval_who
+  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 464, in eval_who
     raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'k' is not defined.
+Exception: Sayer '邻居' is not defined.
 
 Windows-10-10.0.22621 AMD64
-Ren'Py 8.2.2.24041101+nightly
+Ren'Py 8.2.3.24061702
 Gm 1.0
-Mon Aug  5 18:23:27 2024
+Wed Aug  7 13:08:19 2024

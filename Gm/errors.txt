@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 104: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "或许他们认为这艘船和其他的渔船没有什么区别，只有一位可敬的船长和几位善良的游客。"
-    ^
+File "game/script.rpy", line 841: expected 'label_name_declare' not found.
+    label "偷渡客的故事"
+         ^
 
-Ren'Py Version: Ren'Py 8.2.2.24041101+nightly
-Mon Aug  5 18:25:15 2024
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Wed Aug  7 12:58:15 2024
