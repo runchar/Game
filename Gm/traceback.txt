@@ -1,24 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1308, in script
-    OW """“您一定要相信我们那，警察兄弟，L是个向来就非常胆小的人，他怎么可能会干的出来那种事呢？”"""
-Exception: Sayer 'OW' is not defined.
+  File "game/script.rpy", line 590, in script
+    W 。"于是我打算第二天去找他问清楚。在那天晚上，我出门的时候，我却发现两个人匆匆忙忙地往回赶，其中有一个人还捂住脖子，当时我只是觉得像M老板父子，并没有确认，直到第二天我看到T手上的血迹，以及M老板过来时脖子上的丝巾，我就知道肯定是M老板父子杀的，所以我就把他俩杀了。"
+Exception: Say has image attributes ('。',), but there's no image tag associated with the speaking character.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1308, in script
-    OW """“您一定要相信我们那，警察兄弟，L是个向来就非常胆小的人，他怎么可能会干的出来那种事呢？”"""
+  File "game/script.rpy", line 590, in script
+    W 。"于是我打算第二天去找他问清楚。在那天晚上，我出门的时候，我却发现两个人匆匆忙忙地往回赶，其中有一个人还捂住脖子，当时我只是觉得像M老板父子，并没有确认，直到第二天我看到T手上的血迹，以及M老板过来时脖子上的丝巾，我就知道肯定是M老板父子杀的，所以我就把他俩杀了。"
   File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
     Say.execute(self)
-  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'OW' is not defined.
+  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\exports.py", line 1494, in say
+    who(what, *args, **kwargs)
+  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\character.py", line 1332, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\character.py", line 1151, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\character.py", line 1077, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes ('。',), but there's no image tag associated with the speaking character.
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.3.24061702
 Gm 1.0
-Sat Aug 10 17:11:29 2024
+Sat Aug 10 19:12:59 2024
