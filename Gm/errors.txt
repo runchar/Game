@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 841: expected 'label_name_declare' not found.
-    label "偷渡客的故事"
-         ^
+File "game/script.rpy", line 1715: expected statement.
+    shwo bg 
+            ^
+
+File "game/script.rpy", line 1738: expected statement.
+    “是这样的，请问你是谁？找我有什么事吗？”
+                         ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Wed Aug  7 12:58:15 2024
+Sat Aug 10 16:58:33 2024
