@@ -25,4 +25,4 @@ NotADirectoryError: [WinError 267] 目录名称无效。: 'C:\\Users\\Goat\\Docu
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.2.24041101+nightly
  
-Mon Aug  5 16:28:16 2024
+Mon Aug 12 15:10:53 2024

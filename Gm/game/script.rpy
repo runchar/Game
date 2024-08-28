@@ -11,7 +11,7 @@ define A=Character("偷渡客")
 # image K = "K.png"  #人物透明背景
 
 
-image bg 船甲板 = "bg_占位.png"
+image bg 船甲板 = "bg_office.jpg"
 image bg 黄昏= "bg_占位.png" 
 
 # menu:

@@ -1,30 +1,73 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 590, in script
-    W 。"于是我打算第二天去找他问清楚。在那天晚上，我出门的时候，我却发现两个人匆匆忙忙地往回赶，其中有一个人还捂住脖子，当时我只是觉得像M老板父子，并没有确认，直到第二天我看到T手上的血迹，以及M老板过来时脖子上的丝巾，我就知道肯定是M老板父子杀的，所以我就把他俩杀了。"
-Exception: Say has image attributes ('。',), but there's no image tag associated with the speaking character.
+While loading <renpy.display.im.Image object ('bg_office.png') at 0x00000000053f8b50>:
+  File "game/script.rpy", line 37, in script
+    " 爷爷，再给我们讲一个你破案的故事吧。 "
+OSError: Couldn't find file 'bg_office.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 590, in script
-    W 。"于是我打算第二天去找他问清楚。在那天晚上，我出门的时候，我却发现两个人匆匆忙忙地往回赶，其中有一个人还捂住脖子，当时我只是觉得像M老板父子，并没有确认，直到第二天我看到T手上的血迹，以及M老板过来时脖子上的丝巾，我就知道肯定是M老板父子杀的，所以我就把他俩杀了。"
-  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
+  File "game/script.rpy", line 37, in script
+    " 爷爷，再给我们讲一个你破案的故事吧。 "
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
-  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\ast.py", line 615, in execute
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\exports.py", line 1494, in say
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\exports.py", line 1493, in say
     who(what, *args, **kwargs)
-  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\character.py", line 1332, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\character.py", line 1151, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "F:\WorkSpace\Game\renpy-8.2.3-sdk\renpy\character.py", line 1077, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('。',), but there's no image tag associated with the speaking character.
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\character.py", line 1394, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\character.py", line 1045, in do_display
+    display_say(who,
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\character.py", line 741, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\core.py", line 2818, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\transform.py", line 957, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\im.py", line 626, in render
+    return cache.get(self, render=True)
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\im.py", line 309, in get
+    surf = image.load()
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\im.py", line 761, in load
+    raise e
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\display\im.py", line 711, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "C:\Users\Goat\Desktop\TOOLS\renpy-8.2.1-sdk\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'bg_office.png'.
 
 Windows-10-10.0.22621 AMD64
-Ren'Py 8.2.3.24061702
+Ren'Py 8.2.2.24041101+nightly
 Gm 1.0
-Sat Aug 10 19:12:59 2024
+Wed Aug 28 11:32:06 2024
