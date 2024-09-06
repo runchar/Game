@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1188: choice menuitem expects a non-empty block.
-    "结束":
-         ^
+File "game/script.rpy", line 1951: expected statement.
+    shwo bg 工地
+              ^
 
-File "game/script.rpy", line 1497: choice menuitem expects a non-empty block.
-    "结束":
-         ^
-
-File "game/script.rpy", line 1883: choice menuitem expects a non-empty block.
-    "结束":
-         ^
-
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Sat Aug 10 17:38:54 2024
+Ren'Py Version: Ren'Py 8.2.2.24041101+nightly
+Fri Sep  6 20:49:31 2024
