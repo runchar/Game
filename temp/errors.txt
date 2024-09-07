@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 67: expected statement.
+    ended = False
+          ^
+
+File "game/script.rpy", line 944: expected statement.
+    ended = True;
+          ^
+
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Fri Sep  6 22:00:45 2024
